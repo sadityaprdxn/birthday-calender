@@ -132,6 +132,11 @@ header a{
   padding: 2% 0;
 }
 
+.client-data{
+  display: flex;
+  justify-content: space-between;
+}
+
 h2{
   text-transform: uppercase;
   font-size: 20px;
@@ -171,7 +176,11 @@ h3 + ul{
 }
 
 h3 + ul li{
-  padding: 5%;
+  max-height: 30px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 5%;
   background-color: #2C786C;
   color: #FFF;
@@ -223,6 +232,10 @@ input{
   box-shadow: 5px 10px 18px rgba(0,0,0,0.2);
 }
 
+.error input + span{
+  visibility: visible;
+}
+
 input + span{
   display: block;
   width: 40%;
@@ -232,6 +245,7 @@ input + span{
   padding: 1% 0;
   color: red;
   visibility: hidden;
+  transition: 0.3s ease-in-out;
 }
 
 .form-controls{
@@ -254,6 +268,21 @@ button{
 .client-section{
   box-sizing: border-box;
   padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.half-width{
+  width: 49%;
+}
+
+.quarter-width{
+  width: 31%;
 }
 
 
